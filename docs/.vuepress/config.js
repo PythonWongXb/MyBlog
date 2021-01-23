@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-23 19:16:48
+ * @LastEditTime: 2021-01-23 19:34:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -10,7 +10,6 @@
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
-  base: '.',
   themeConfig: {
     lastUpdated: '最后更新', // string | boolean
     nav: [ // 导航栏配置
