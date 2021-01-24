@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-24 21:14:12
+ * @LastEditTime: 2021-01-24 21:26:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -28,7 +28,8 @@ import Component from 'vue-class-component'
 })
 class Home extends Vue {
   jumpToHome() {
-    this.$router.push('/home')
+    // add catch, the reason of promise is the inner logic error of router probably.
+    this.$router.push('/home').catch()
   }
 }
 
