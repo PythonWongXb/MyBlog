@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-24 20:12:16
+ * @LastEditTime: 2021-01-24 21:14:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -13,6 +13,7 @@
 
 <template lang="pug">
 .app_container home a
+  button(@click="jumpToHome") jumpToHome
 
 </template>
 
@@ -20,8 +21,15 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
-@Component
+@Component({
+  created() {
+    console.log(this.$route.path)
+  }
+})
 class Home extends Vue {
+  jumpToHome() {
+    this.$router.push('/home')
+  }
 }
 
 export default Home
