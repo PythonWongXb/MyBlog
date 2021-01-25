@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-25 14:26:04
+ * @LastEditTime: 2021-01-25 14:29:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -44,6 +44,11 @@ import Component from 'vue-class-component'
 import {
   _getRandomInt
 } from './../utils/random'
+import {
+  BEGIN_PAGE_NUMBER,
+  END_PAGE_NUMBER,
+  INTERVAL_TIME,
+} from './../modules/home'
 
 @Component({
   created() {
@@ -61,12 +66,10 @@ class Home extends Vue {
   picNumber = 0
 
   _setRandomPic() {
-    const beginNumber = 1
-    const endNumber = 355
-    this.picNumber = _getRandomInt(beginNumber, endNumber)
+    this.picNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
     setInterval(() => {
-      this.picNumber = _getRandomInt(beginNumber, endNumber)
-    }, 3000)
+      this.picNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
+    }, INTERVAL_TIME)
   }
 
   jumpToHome() {
