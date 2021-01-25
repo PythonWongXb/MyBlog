@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-25 09:08:29
+ * @LastEditTime: 2021-01-25 09:49:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -26,6 +26,10 @@
   -o-transition: All 2s ease
   -ms-transition: All 2s ease
   transition: All 2s ease
+</style>
+
+<style lang="sass">
+@import './../styles/sass/common'
 </style>
 
 <template lang="pug">
