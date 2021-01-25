@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-25 10:31:43
+ * @LastEditTime: 2021-01-25 14:26:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -41,15 +41,15 @@
 <script>
 import Vue from 'vue'
 import Component from 'vue-class-component'
+import {
+  _getRandomInt
+} from './../utils/random'
 
 @Component({
   created() {
-    console.log(this.$route.path)
-    setInterval(() => {
-      // @todo get right pic, random
-      this.picNumber++
-    }, 2000)
+    this._setRandomPic()
   },
+
   computed: {
     backgroundImg() {
       return this.picNumber
@@ -58,7 +58,17 @@ import Component from 'vue-class-component'
 })
 
 class Home extends Vue {
-  picNumber = 1
+  picNumber = 0
+
+  _setRandomPic() {
+    const beginNumber = 1
+    const endNumber = 355
+    this.picNumber = _getRandomInt(beginNumber, endNumber)
+    setInterval(() => {
+      this.picNumber = _getRandomInt(beginNumber, endNumber)
+    }, 3000)
+  }
+
   jumpToHome() {
     // add catch, the reason of promise is the inner logic error of router probably.
     this.$router.push('/home').catch()
