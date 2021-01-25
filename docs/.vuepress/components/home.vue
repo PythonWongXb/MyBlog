@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-25 09:49:20
+ * @LastEditTime: 2021-01-25 10:31:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -33,7 +33,7 @@
 </style>
 
 <template lang="pug">
-.app_container home a
+.app_container(:style="{'background-image': `url(http://www.ruanyifeng.com/images_pub/pub_${backgroundImg}.jpg)`}")
   button(@click="jumpToHome") jumpToHome
 
 </template>
@@ -45,9 +45,20 @@ import Component from 'vue-class-component'
 @Component({
   created() {
     console.log(this.$route.path)
+    setInterval(() => {
+      // @todo get right pic, random
+      this.picNumber++
+    }, 2000)
+  },
+  computed: {
+    backgroundImg() {
+      return this.picNumber
+    }
   }
 })
+
 class Home extends Vue {
+  picNumber = 1
   jumpToHome() {
     // add catch, the reason of promise is the inner logic error of router probably.
     this.$router.push('/home').catch()
