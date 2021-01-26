@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 11:59:30
+ * @LastEditTime: 2021-01-26 12:17:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -26,7 +26,7 @@
   transform: translate(-50%, -50%)
   transition: height 1s ease
   transition: top 1s ease
-  padding: 30px
+  padding: 15px 30px
 
 .each_page
   background-color: rgba(0,0,0,0.5)
@@ -62,6 +62,25 @@
 .content
   padding: 22.5px 0 15px 0
 
+.footer
+  margin: 0 1em
+  border-top: 1px solid #d3d3d3
+  color: #d3d3d3
+  padding-top: 0
+  clear: both
+  line-height: 1.2
+
+.footer_content
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  font-size: 1.6em
+  color: #fefefe
+  text-shadow: 0 1px 1px #333
+  line-height: 220%
+
+.line
+  padding: 0 5px
 </style>
 
 <template lang="pug">
@@ -71,12 +90,13 @@
     .subtitle Ruan Yifeng's Personal Website
   .content
     .each_page(
-      v-for="item in 4"
-    ) {{ item }}
+      v-for="item in itemList"
+    ) » {{ item.text }}
   .footer
-    .contact contact
-    .line
-    .dominan ruanyifeng.com
+    .footer_content
+      .contact Contact
+      .line |
+      .dominan ruanyifeng.com
 
 </template>
 
@@ -86,6 +106,23 @@ import Component from 'vue-class-component'
 
 @Component
 class Block extends Vue {
+  itemList = [
+    {
+      text: '网络日志（Blog）',
+      url: 'url',
+      meta: '说明'
+    },
+    {
+      text: '网络日志（Blog）',
+      url: 'url',
+      meta: '说明'
+    },
+    {
+      text: '网络日志（Blog）',
+      url: 'url',
+      meta: '说明'
+    }
+  ]
 }
 
 export default Block
