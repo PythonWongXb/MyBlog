@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 15:30:36
+ * @LastEditTime: 2021-01-26 15:51:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -26,7 +26,7 @@
   transform: translate(-50%, -50%)
   transition: height 1s ease
   transition: top 1s ease
-  padding: 15px 30px
+  padding: 15px 30px 15px
 
 .each_page
   background-color: rgba(0,0,0,0.5)
@@ -48,7 +48,7 @@
   color: #fefefe
   float: none
   margin: auto
-  padding-top: 0.4rem
+  padding-top: 30px
   text-align: center
   font-weight: bolder
   text-shadow: 0 1px 1px #333
@@ -115,10 +115,20 @@
     background: #fff
     text-decoration: underline
     cursor: pointer
+
+.hide_block
+  height: 6px
+  top: 15px
+
+.rever_arrow
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHZSURBVEiJ7ZQ/ixpRFMXPeY6za7IEbbS1EGysUk0TkFjkI1imShFIioVASJsqW2wT8gW2TSsypBCLBLExEBgQ2cxodDdYKBhHDZv5c1Ooi4juGsIWCXvhNo97fu+++857FBHcVKgbI9/C/z84ROQyAahMJnMvn88fAIgB2AegA4guMrJoiAC4qt2UXPU5yT3DMB6l0+kHmqYpEQkWDTAMw8u6MAxJEiIiSikEQRAdjUY/Go3G8XA4HC/rtLVTXBiG0dR1/XkqlXqo6/rPMAw535cQES67XqxRRCKz2cydTqdPVsHAhpnX6/XTyWTy0nXdLyTvRiKRO0qpGMkYyX0AeyR1klEAmud5F7ZtvyiXy+/XWdz2/AuFwv1sNnsSj8dzMi8iyXBxQkUSnuf5rVbrValUOpYNoK1uqVQqn9vt9tPxePxVKbUcC0SESin4vh82m80jx3HebgJfCQcA0zQ/2bb9zHXdbyRBUiml6Pt+4DjOu06n88ayrF/b9Nf63DTND91u99B13e+apsHzPHEc56TX6722LGtylXbrzNejWCw+TiaTR4PB4GO/3z+sVqtn12l2hudyuYNEImEEQdCs1Wrnu2h2hgNzu2y7vL+G/2n8u7/iLXxj/AYhQQQGkT/xPgAAAABJRU5ErkJggg==")
+
 </style>
 
 <template lang="pug">
-.inter_face_container
+.inter_face_container(
+  :class="{'hide_block': hideBlock}"
+)
   .header
     .title(@click="handleClickTitle") 阮一峰的个人网站
     .subtitle Ruan Yifeng's Personal Website
@@ -133,7 +143,10 @@
       .contact Contact
       .line |
       .dominan ruanyifeng.com
-  .arrow_up
+  .arrow_up(
+    :class="{'rever_arrow': hideBlock}"
+    @click="hideBlock = !hideBlock"
+  )
 </template>
 
 <script>
@@ -142,6 +155,7 @@ import Component from 'vue-class-component'
 
 @Component
 class Block extends Vue {
+  hideBlock = false
   itemList = [
     {
       text: '网络日志（Blog）',
