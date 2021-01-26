@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 17:39:02
+ * @LastEditTime: 2021-01-26 20:29:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -53,6 +53,7 @@
   text-align: center
   font-weight: bolder
   text-shadow: 0 1px 1px #333
+  line-height: 1.5rem
 
   &:hover
     text-decoration: underline

@@ -1,14 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-01-26 16:33:28
- * @LastEditTime: 2021-01-26 16:37:42
+ * @LastEditTime: 2021-01-26 20:27:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/modules/homePageBlock.js
  */
 
-export const title = '阮一峰的个人网站'
-export const subtitle = 'Ruan Yifeng\'s Personal Website'
+export const title = '二十多岁的老王的个人网站'
+export const subtitle = 'Wang XiangBo\'s Personal Website'
 export const contact = 'Contact'
 export const dominan = 'ruanyifeng.com'
 export const itemList = [
