@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 15:22:32
+ * @LastEditTime: 2021-01-26 15:30:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -37,6 +37,10 @@
   line-height: 180%
   margin-left: 0.8em
   font-size: 1.6em
+
+  &:hover
+    color: #000
+    background: #fff
 
 .title
   font-size: 1.4rem
@@ -96,6 +100,21 @@
   border-radius: 100%
   cursor: n-resize
   background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==)
+
+.info
+  &:hover
+    text-decoration: underline
+    cursor: pointer
+
+.contact
+  padding: 5px
+  border-radius: 5px
+
+  &:hover
+    color: #000
+    background: #fff
+    text-decoration: underline
+    cursor: pointer
 </style>
 
 <template lang="pug">
@@ -106,7 +125,9 @@
   .content
     .each_page(
       v-for="item in itemList"
-    ) » {{ item.text }}
+    )
+      span {{ '» ' }}
+      span.info {{ item.text }}
   .footer
     .footer_content
       .contact Contact
