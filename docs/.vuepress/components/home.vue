@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-26 16:15:15
+ * @LastEditTime: 2021-01-26 21:28:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -34,6 +34,13 @@
 
 <style lang="sass">
 @import './../styles/sass/common'
+.site-name
+  padding: 0 15px
+  border-radius: 5px
+
+  &:hover
+    color: #fff
+    background: #3eaf7c
 </style>
 
 <template lang="pug">
