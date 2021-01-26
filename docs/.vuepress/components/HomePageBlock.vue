@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 17:33:15
+ * @LastEditTime: 2021-01-26 17:39:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -37,14 +37,14 @@
   margin-top: 1em
   line-height: 180%
   margin-left: 0.8em
-  font-size: 1.6em
+  font-size: 1.4em
 
   &:hover
     color: #000
     background: #fff
 
 .title
-  font-size: 1.4rem
+  font-size: 1.3rem
   line-height: 90%
   color: #fefefe
   float: none
@@ -62,7 +62,7 @@
   text-align: center
   color: #fefefe
   text-shadow: 0 1px 1px #333
-  font-size: 1.6em
+  font-size: 1.2em
   line-height: 220%
 
 .header
@@ -83,19 +83,15 @@
   display: flex
   justify-content: flex-end
   align-items: center
-  font-size: 1.6em
+  font-size: 1.2em
   color: #fefefe
   text-shadow: 0 1px 1px #333
   line-height: 220%
   padding-top: 10px
 
 .line
-  background: #fff
-  height: 30px
-  width: 2px
-  margin: 0 5px
-  border-radius: 2px
   flex-shrink: 0
+  font-weight: bold
 
 .arrow_up
   position: absolute
@@ -152,7 +148,7 @@
   .footer
     .footer_content
       .contact(@click="contactUs") {{ homePageBlockModule.contact }}
-      .line
+      .line |
       .dominan {{ homePageBlockModule.dominan }}
   .arrow_up(
     :class="{'rever_arrow': hideBlock}"
