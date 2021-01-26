@@ -1,14 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-26 20:35:09
+ * @LastEditTime: 2021-01-26 21:05:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
  */
 
 module.exports = {
-  title: '二十多岁的老王的个人网站 - Wang XiangBo\'s Personal Website',
+  title: '二十多岁的老王的个人网站',
   description: 'Just playing around',
   base: '/MyBlogDeploy/',
   themeConfig: {
