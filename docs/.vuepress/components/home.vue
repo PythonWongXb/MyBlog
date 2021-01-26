@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-26 15:22:59
+ * @LastEditTime: 2021-01-26 15:52:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -77,7 +77,7 @@ class Home extends Vue {
 
   _setRandomPic() {
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
-    this.currentNumber = this.nextPicNumber
+    this.currentNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
     this.timer = setInterval(() => {
       this.currentNumber = this.nextPicNumber
       this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
