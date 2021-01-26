@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 20:40:05
+ * @LastEditTime: 2021-01-26 20:59:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -130,6 +130,7 @@
 
 .dominan
   margin-left: 5px
+  white-space: nowrap
 </style>
 
 <template lang="pug">
