@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 16:16:30
+ * @LastEditTime: 2021-01-26 17:33:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -18,7 +18,8 @@
   top: 50%
   width: auto
   height: auto
-  max-height: 80%
+  max-height: 90%
+  max-width: 90%
   -webkit-transform: translate(-50%, -50%)
   -moz-transform: translate(-50%, -50%)
   -ms-transform: translate(-50%, -50%)
@@ -94,6 +95,7 @@
   width: 2px
   margin: 0 5px
   border-radius: 2px
+  flex-shrink: 0
 
 .arrow_up
   position: absolute
@@ -138,20 +140,20 @@
   :class="{'hide_block': hideBlock}"
 )
   .header
-    .title(@click="handleClickTitle") 阮一峰的个人网站
-    .subtitle Ruan Yifeng's Personal Website
+    .title(@click="handleClickTitle") {{ homePageBlockModule.title }}
+    .subtitle {{ homePageBlockModule.subtitle }}
   .content
     .each_page(
-      v-for="item in itemList"
+      v-for="item in homePageBlockModule.itemList"
       @click="handleClickItem(item.url)"
     )
       span {{ '» ' }}
       span.info {{ item.text }}
   .footer
     .footer_content
-      .contact(@click="contactUs") Contact
+      .contact(@click="contactUs") {{ homePageBlockModule.contact }}
       .line
-      .dominan ruanyifeng.com
+      .dominan {{ homePageBlockModule.dominan }}
   .arrow_up(
     :class="{'rever_arrow': hideBlock}"
     @click="hideBlock = !hideBlock"
@@ -161,27 +163,12 @@
 <script>
 import Vue from 'vue'
 import Component from 'vue-class-component'
+import * as homePageBlockModule from './../modules/homePageBlock'
 
 @Component
 class Block extends Vue {
+  homePageBlockModule = homePageBlockModule
   hideBlock = false
-  itemList = [
-    {
-      text: '网络日志（Blog）',
-      url: '/home',
-      meta: '说明'
-    },
-    {
-      text: '联系我们',
-      url: '/contact',
-      meta: '说明'
-    },
-    {
-      text: '关于我们',
-      url: '/about',
-      meta: '说明'
-    }
-  ]
 
   handleClickTitle() {
     this.$emit('nextPic')
@@ -192,7 +179,7 @@ class Block extends Vue {
   }
 
   contactUs() {
-    this.$router.push('/contact')
+    this.$router.push(this.homePageBlockModule.contactUsUrl)
   }
 }
 
