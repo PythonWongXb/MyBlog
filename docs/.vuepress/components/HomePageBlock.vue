@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 12:17:35
+ * @LastEditTime: 2021-01-26 15:20:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -49,6 +49,10 @@
   font-weight: bolder
   text-shadow: 0 1px 1px #333
 
+  &:hover
+    text-decoration: underline
+    cursor: pointer
+
 .subtitle
   text-align: center
   color: #fefefe
@@ -81,6 +85,17 @@
 
 .line
   padding: 0 5px
+
+.arrow_up
+  position: absolute
+  right: 5px
+  top: 5px
+  width: 21px
+  height: 21px
+  background-color: #fefefe
+  border-radius: 100%
+  cursor: n-resize
+  background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==)
 </style>
 
 <template lang="pug">
@@ -97,7 +112,7 @@
       .contact Contact
       .line |
       .dominan ruanyifeng.com
-
+  .arrow_up
 </template>
 
 <script>
