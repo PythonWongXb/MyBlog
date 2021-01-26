@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-26 16:33:28
- * @LastEditTime: 2021-01-26 20:27:38
+ * @LastEditTime: 2021-01-26 20:52:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/modules/homePageBlock.js
@@ -10,7 +10,7 @@
 export const title = '二十多岁的老王的个人网站'
 export const subtitle = 'Wang XiangBo\'s Personal Website'
 export const contact = 'Contact'
-export const dominan = 'ruanyifeng.com'
+export const dominan = 'Pythonista'
 export const itemList = [
   {
     text: '网络日志（Blog）',
