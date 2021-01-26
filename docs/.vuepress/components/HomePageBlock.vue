@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 20:29:34
+ * @LastEditTime: 2021-01-26 20:40:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -142,10 +142,9 @@
   .content
     .each_page(
       v-for="item in homePageBlockModule.itemList"
-      @click="handleClickItem(item.url)"
     )
       span {{ '» ' }}
-      span.info {{ item.text }}
+      span.info(@click="handleClickItem(item.url)") {{ item.text }}
   .footer
     .footer_content
       .contact(@click="contactUs") {{ homePageBlockModule.contact }}
