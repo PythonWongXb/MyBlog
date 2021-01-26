@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 16:06:50
+ * @LastEditTime: 2021-01-26 16:16:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -149,7 +149,7 @@
       span.info {{ item.text }}
   .footer
     .footer_content
-      .contact Contact
+      .contact(@click="contactUs") Contact
       .line
       .dominan ruanyifeng.com
   .arrow_up(
@@ -189,6 +189,10 @@ class Block extends Vue {
 
   handleClickItem(url) {
     this.$router.push(url)
+  }
+
+  contactUs() {
+    this.$router.push('/contact')
   }
 }
 
