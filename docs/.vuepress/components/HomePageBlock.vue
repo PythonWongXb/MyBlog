@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 16:02:36
+ * @LastEditTime: 2021-01-26 16:06:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -143,6 +143,7 @@
   .content
     .each_page(
       v-for="item in itemList"
+      @click="handleClickItem(item.url)"
     )
       span {{ '» ' }}
       span.info {{ item.text }}
@@ -167,23 +168,27 @@ class Block extends Vue {
   itemList = [
     {
       text: '网络日志（Blog）',
-      url: 'url',
+      url: '/home',
       meta: '说明'
     },
     {
-      text: '网络日志（Blog）',
-      url: 'url',
+      text: '联系我们',
+      url: '/contact',
       meta: '说明'
     },
     {
-      text: '网络日志（Blog）',
-      url: 'url',
+      text: '关于我们',
+      url: '/about',
       meta: '说明'
     }
   ]
 
   handleClickTitle() {
     this.$emit('nextPic')
+  }
+
+  handleClickItem(url) {
+    this.$router.push(url)
   }
 }
 
