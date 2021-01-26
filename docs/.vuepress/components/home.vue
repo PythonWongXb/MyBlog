@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-25 14:29:57
+ * @LastEditTime: 2021-01-26 09:20:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -33,9 +33,9 @@
 </style>
 
 <template lang="pug">
-.app_container(:style="{'background-image': `url(http://www.ruanyifeng.com/images_pub/pub_${backgroundImg}.jpg)`}")
+.app_container(:style="{'background-image': `url(http://www.ruanyifeng.com/images_pub/pub_${currentNumber}.jpg)`}")
   button(@click="jumpToHome") jumpToHome
-
+  img(:src="nextSrc")
 </template>
 
 <script>
@@ -56,19 +56,20 @@ import {
   },
 
   computed: {
-    backgroundImg() {
-      return this.picNumber
+    nextSrc() {
+      return `http://www.ruanyifeng.com/images_pub/pub_${this.nextPicNumber}.jpg`
     }
   }
 })
 
 class Home extends Vue {
-  picNumber = 0
-
+  nextPicNumber = 0
+  currentNumber = 0
   _setRandomPic() {
-    this.picNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
+    this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
     setInterval(() => {
-      this.picNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
+      this.currentNumber = this.nextPicNumber
+      this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
     }, INTERVAL_TIME)
   }
 
