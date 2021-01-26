@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 15:20:30
+ * @LastEditTime: 2021-01-26 15:22:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -101,7 +101,7 @@
 <template lang="pug">
 .inter_face_container
   .header
-    .title 阮一峰的个人网站
+    .title(@click="handleClickTitle") 阮一峰的个人网站
     .subtitle Ruan Yifeng's Personal Website
   .content
     .each_page(
@@ -138,6 +138,10 @@ class Block extends Vue {
       meta: '说明'
     }
   ]
+
+  handleClickTitle() {
+    this.$emit('nextPic')
+  }
 }
 
 export default Block

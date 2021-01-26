@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-26 11:22:26
+ * @LastEditTime: 2021-01-26 15:22:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -40,8 +40,9 @@
 .app_container(:style="{'background-image': `url(http://www.ruanyifeng.com/images_pub/pub_${currentNumber}.jpg)`}")
   button(@click="jumpToHome") jumpToHome
   img.demo_img(:src="nextSrc")
-  button(@click="nextPic") nextPic
-  home-page-block
+  home-page-block(
+    @nextPic="nextPic"
+  )
 
 </template>
 
