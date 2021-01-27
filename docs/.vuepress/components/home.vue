@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 09:55:35
+ * @LastEditTime: 2021-01-27 11:33:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -65,6 +65,15 @@ import {
   INTERVAL_TIME,
 } from './../modules/home'
 
+function rgba(){//rgb颜色随机
+  var r = Math.floor(Math.random()*256)
+  var g = Math.floor(Math.random()*256)
+  var b = Math.floor(Math.random()*256)
+  var a = 1
+  const list = [r, g, b, a]
+  return `rgba(${list.join(',')})`
+}
+
 @Component({
   created() {
     this._setRandomPic()
@@ -88,11 +97,9 @@ class Home extends Vue {
   randomBackgroundTimer = null
 
   _setRandomBackgroundColor() {
-    // @todo set init primary random color
-    const primaryColor = '#fffccc'
-    document.body.style.setProperty('--menu-primary-background-colour', primaryColor)
+    document.body.style.setProperty('--menu-primary-background-colour', rgba())
     this.randomBackgroundTimer = setInterval(() => {
-      document.body.style.setProperty('--menu-primary-background-colour', 'red')
+      document.body.style.setProperty('--menu-primary-background-colour', rgba())
     }, INTERVAL_TIME)
   }
 
