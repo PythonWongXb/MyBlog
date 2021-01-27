@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-27 09:28:12
+ * @LastEditTime: 2021-01-27 09:51:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -61,10 +61,11 @@
 
 .subtitle
   text-align: center
-  color: #fefefe
+  color: var(--menu-primary-background-colour)
   text-shadow: 0 1px 1px #333
   font-size: 1.2em
   line-height: 220%
+  transition: color 2s ease
 
 .header
   border-bottom: 1px solid #fefefe
