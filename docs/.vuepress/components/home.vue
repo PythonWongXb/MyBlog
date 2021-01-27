@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 11:33:44
+ * @LastEditTime: 2021-01-27 12:03:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -116,6 +116,9 @@ class Home extends Vue {
     if (this.randomBackgroundPicTimer) clearInterval(this.randomBackgroundPicTimer)
     this.currentNumber = this.nextPicNumber
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
+
+    if (this.randomBackgroundTimer) clearInterval(this.randomBackgroundTimer)
+    document.body.style.setProperty('--menu-primary-background-colour', rgba())
   }
 
   jumpToHome() {
