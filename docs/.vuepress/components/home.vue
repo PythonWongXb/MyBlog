@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 09:52:40
+ * @LastEditTime: 2021-01-27 09:55:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -84,7 +84,7 @@ import {
 class Home extends Vue {
   nextPicNumber = 0
   currentNumber = 0
-  timer = null
+  randomBackgroundPicTimer = null
   randomBackgroundTimer = null
 
   _setRandomBackgroundColor() {
@@ -99,14 +99,14 @@ class Home extends Vue {
   _setRandomPic() {
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
     this.currentNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
-    this.timer = setInterval(() => {
+    this.randomBackgroundPicTimer = setInterval(() => {
       this.currentNumber = this.nextPicNumber
       this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
     }, INTERVAL_TIME)
   }
 
   nextPic() {
-    if (this.timer) clearInterval(this.timer)
+    if (this.randomBackgroundPicTimer) clearInterval(this.randomBackgroundPicTimer)
     this.currentNumber = this.nextPicNumber
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
   }
