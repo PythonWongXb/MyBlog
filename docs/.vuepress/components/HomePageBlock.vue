@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-27 16:18:30
+ * @LastEditTime: 2021-01-27 16:25:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -65,7 +65,6 @@
   text-shadow: 0 1px 1px #333
   font-size: 1.2em
   line-height: 220%
-  transition: color 2s ease
 
 .header
   border-bottom: 1px solid #fefefe
@@ -134,6 +133,8 @@
   padding: 0 10px
   border-radius: 10px
   color: var(--menu-primary-background-colour)
+  text-decoration: underline
+  transition: color 2s ease
 
   &:hover
     color: #000
