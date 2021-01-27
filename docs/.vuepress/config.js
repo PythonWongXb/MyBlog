@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-27 21:34:59
+ * @LastEditTime: 2021-01-27 22:14:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -58,8 +58,8 @@ module.exports = {
     sidebar: {
         '/JavaScript/': [
           {
-            title: 'Group 1',
-            path: '/JavaScript/',
+            title: 'JavaScript基础',
+            path: '/JavaScript/#1',
             children: [
               {
                 title: '1',
@@ -72,8 +72,8 @@ module.exports = {
             ]
           },
           {
-            title: 'Group 2',
-            path: '/JavaScript/',
+            title: 'JavaScript中级',
+            path: '/JavaScript/#2',
             children: [
               '/'
             ]
