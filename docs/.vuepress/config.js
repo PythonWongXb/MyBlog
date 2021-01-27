@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-27 22:14:32
+ * @LastEditTime: 2021-01-27 22:24:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -67,9 +67,9 @@ module.exports = {
               },
               {
                 title: '2',
-                path: '/JavaScript/'
+                path: '/JavaScript/two'
               }
-            ]
+            ],
           },
           {
             title: 'JavaScript中级',
