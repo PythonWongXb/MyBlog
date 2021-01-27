@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 16:45:38
+ * @LastEditTime: 2021-01-27 16:47:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -48,7 +48,7 @@
   //- img for cache
   img.demo_img(v-show="false" :src="nextSrc")
   home-page-block(
-    @nextPic="nextPic"
+    @nextPic="handleClickTitle"
   )
 
 </template>
@@ -120,7 +120,7 @@ class Home extends Vue {
     }, INTERVAL_TIME)
   }
 
-  nextPic() {
+  handleClickTitle() {
     if (this.randomBackgroundPicTimer) clearInterval(this.randomBackgroundPicTimer)
     this.currentNumber = this.nextPicNumber
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
