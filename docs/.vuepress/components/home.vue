@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 17:04:15
+ * @LastEditTime: 2021-01-27 22:30:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -41,6 +41,12 @@
   &:hover
     color: #fff !important
     background: var(--menu-primary-background-colour)
+
+.action-button
+  border: none !important
+  border-bottom: none !important
+  background-color: var(--menu-primary-background-colour) !important
+  transition: all 2s ease !important
 </style>
 
 <template lang="pug">
