@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 16:47:04
+ * @LastEditTime: 2021-01-27 16:49:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -121,10 +121,17 @@ class Home extends Vue {
   }
 
   handleClickTitle() {
+    this._nextPic()
+    this._nextColor()
+  }
+
+  _nextPic() {
     if (this.randomBackgroundPicTimer) clearInterval(this.randomBackgroundPicTimer)
     this.currentNumber = this.nextPicNumber
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
+  }
 
+  _nextColor() {
     if (this.randomBackgroundColorTimer) clearInterval(this.randomBackgroundColorTimer)
     document.body.style.setProperty('--menu-primary-background-colour', _getRandomRgba())
   }
