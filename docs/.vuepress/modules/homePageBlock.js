@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-26 16:33:28
- * @LastEditTime: 2021-01-27 09:20:46
+ * @LastEditTime: 2021-01-27 17:00:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/modules/homePageBlock.js
@@ -31,3 +31,9 @@ export const itemList = [
 export const contactUsUrl = '/contact'
 export const aboutMeUrl = '/me'
 
+export const awaitTime = function (time = 0.1) {
+  const msTime = time * 1000
+  return new Promise((resolve, reject) => {
+    setTimeout(_ => resolve(), msTime)
+  })
+}

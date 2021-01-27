@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-27 16:58:53
+ * @LastEditTime: 2021-01-27 17:01:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -172,13 +172,6 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 import * as homePageBlockModule from './../modules/homePageBlock'
 
-const awaitTime = function(time = 0.1) {
-  const msTime = time * 1000
-  return new Promise((resolve, reject) => {
-    setTimeout(_=> resolve(), msTime)
-  })
-}
-
 @Component
 class Block extends Vue {
   homePageBlockModule = homePageBlockModule
@@ -189,17 +182,17 @@ class Block extends Vue {
   }
 
   async handleClickItem(url) {
-    await awaitTime()
+    await homePageBlockModule.awaitTime()
     this.$router.push(url).catch()
   }
 
   async contactUs() {
-    await awaitTime()
+    await homePageBlockModule.awaitTime()
     this.$router.push(this.homePageBlockModule.contactUsUrl).catch()
   }
 
   async aboutMe() {
-    await awaitTime()
+    await homePageBlockModule.awaitTime()
     this.$router.push(this.homePageBlockModule.aboutMeUrl).catch()
   }
 }
