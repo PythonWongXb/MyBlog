@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-26 16:33:28
- * @LastEditTime: 2021-01-26 20:59:08
+ * @LastEditTime: 2021-01-27 09:20:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/modules/homePageBlock.js
@@ -29,4 +29,5 @@ export const itemList = [
   }
 ]
 export const contactUsUrl = '/contact'
+export const aboutMeUrl = '/me'
 

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-26 20:59:33
+ * @LastEditTime: 2021-01-27 09:28:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -129,8 +129,15 @@
   cursor: s-resize
 
 .dominan
-  margin-left: 5px
   white-space: nowrap
+  padding: 0 10px
+  border-radius: 10px
+
+  &:hover
+    color: #000
+    background: #fff
+    text-decoration: underline
+    cursor: pointer
 </style>
 
 <template lang="pug">
@@ -150,7 +157,7 @@
     .footer_content
       .contact(@click="contactUs") {{ homePageBlockModule.contact }}
       .line |
-      .dominan {{ homePageBlockModule.dominan }}
+      .dominan(@click="aboutMe") {{ homePageBlockModule.dominan }}
   .arrow_up(
     :class="{'rever_arrow': hideBlock}"
     @click="hideBlock = !hideBlock"
@@ -177,6 +184,10 @@ class Block extends Vue {
 
   contactUs() {
     this.$router.push(this.homePageBlockModule.contactUsUrl)
+  }
+
+  aboutMe() {
+    this.$router.push(this.homePageBlockModule.aboutMeUrl)
   }
 }
 
