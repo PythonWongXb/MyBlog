@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 16:43:08
+ * @LastEditTime: 2021-01-27 16:45:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -65,14 +65,14 @@ import {
   INTERVAL_TIME,
 } from './../modules/home'
 
-function rgba() {
+function _getRandomRgba() {
   var r = Math.floor(Math.random()*256)
   var g = Math.floor(Math.random()*256)
   var b = Math.floor(Math.random()*256)
   var a = 1
   const max = Math.max(...[r, g, b, a])
   if (max < 70) {
-    rgba()
+    _getRandomRgba()
   } else {
     return `rgba(${[r, g, b, a].join(',')})`
   }
@@ -103,9 +103,9 @@ class Home extends Vue {
   _setRandomBackgroundColor() {
     if (this.randomBackgroundColorTimer) return
 
-    document.body.style.setProperty('--menu-primary-background-colour', rgba())
+    document.body.style.setProperty('--menu-primary-background-colour', _getRandomRgba())
     this.randomBackgroundColorTimer = setInterval(() => {
-      document.body.style.setProperty('--menu-primary-background-colour', rgba())
+      document.body.style.setProperty('--menu-primary-background-colour', _getRandomRgba())
     }, INTERVAL_TIME)
   }
 
@@ -126,7 +126,7 @@ class Home extends Vue {
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
 
     if (this.randomBackgroundColorTimer) clearInterval(this.randomBackgroundColorTimer)
-    document.body.style.setProperty('--menu-primary-background-colour', rgba())
+    document.body.style.setProperty('--menu-primary-background-colour', _getRandomRgba())
   }
 
   jumpToHome() {
