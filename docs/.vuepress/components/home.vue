@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-26 21:28:11
+ * @LastEditTime: 2021-01-27 09:52:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -39,8 +39,8 @@
   border-radius: 5px
 
   &:hover
-    color: #fff
-    background: #3eaf7c
+    color: #fff !important
+    background: var(--menu-primary-background-colour)
 </style>
 
 <template lang="pug">
@@ -70,6 +70,10 @@ import {
     this._setRandomPic()
   },
 
+  mounted() {
+    this._setRandomBackgroundColor()
+  },
+
   computed: {
     nextSrc() {
       return `http://www.ruanyifeng.com/images_pub/pub_${this.nextPicNumber}.jpg`
@@ -81,6 +85,16 @@ class Home extends Vue {
   nextPicNumber = 0
   currentNumber = 0
   timer = null
+  randomBackgroundTimer = null
+
+  _setRandomBackgroundColor() {
+    // @todo set init primary random color
+    const primaryColor = '#fffccc'
+    document.body.style.setProperty('--menu-primary-background-colour', primaryColor)
+    this.randomBackgroundTimer = setInterval(() => {
+      document.body.style.setProperty('--menu-primary-background-colour', 'red')
+    }, INTERVAL_TIME)
+  }
 
   _setRandomPic() {
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
