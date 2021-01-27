@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 16:23:58
+ * @LastEditTime: 2021-01-27 16:43:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -65,13 +65,17 @@ import {
   INTERVAL_TIME,
 } from './../modules/home'
 
-function rgba(){//rgb颜色随机
+function rgba() {
   var r = Math.floor(Math.random()*256)
   var g = Math.floor(Math.random()*256)
   var b = Math.floor(Math.random()*256)
   var a = 1
-  const list = [r, g, b, a]
-  return `rgba(${list.join(',')})`
+  const max = Math.max(...[r, g, b, a])
+  if (max < 70) {
+    rgba()
+  } else {
+    return `rgba(${[r, g, b, a].join(',')})`
+  }
 }
 
 @Component({
