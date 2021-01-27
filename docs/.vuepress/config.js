@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-27 20:20:30
+ * @LastEditTime: 2021-01-27 21:34:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -22,7 +22,7 @@ module.exports = {
             items: [
               {
                 text: 'JavaScript',
-                link: '/language/chinese/'
+                link: '/JavaScript/'
               },
               {
                 text: 'Css3',
@@ -54,18 +54,31 @@ module.exports = {
         ]
       }
     ],
-    sidebarDepth: 2, // 侧边栏显示2级
+    sidebarDepth: 2,
     sidebar: {
-      '/': [
-        {
-          title: 'contact',
-          path: '/contact',
-        },
-        {
-          title: 'about',
-          path: '/about',
-        }
-      ]
+        '/JavaScript/': [
+          {
+            title: 'Group 1',
+            path: '/JavaScript/',
+            children: [
+              {
+                title: '1',
+                path: '/JavaScript/one'
+              },
+              {
+                title: '2',
+                path: '/JavaScript/'
+              }
+            ]
+          },
+          {
+            title: 'Group 2',
+            path: '/JavaScript/',
+            children: [
+              '/'
+            ]
+          },
+        ],
     },
   },
   configureWebpack: {
