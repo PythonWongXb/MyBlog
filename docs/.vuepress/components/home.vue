@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 12:03:33
+ * @LastEditTime: 2021-01-27 12:04:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -94,11 +94,11 @@ class Home extends Vue {
   nextPicNumber = 0
   currentNumber = 0
   randomBackgroundPicTimer = null
-  randomBackgroundTimer = null
+  randomBackgroundColorTimer = null
 
   _setRandomBackgroundColor() {
     document.body.style.setProperty('--menu-primary-background-colour', rgba())
-    this.randomBackgroundTimer = setInterval(() => {
+    this.randomBackgroundColorTimer = setInterval(() => {
       document.body.style.setProperty('--menu-primary-background-colour', rgba())
     }, INTERVAL_TIME)
   }
@@ -117,7 +117,7 @@ class Home extends Vue {
     this.currentNumber = this.nextPicNumber
     this.nextPicNumber = _getRandomInt(BEGIN_PAGE_NUMBER, END_PAGE_NUMBER)
 
-    if (this.randomBackgroundTimer) clearInterval(this.randomBackgroundTimer)
+    if (this.randomBackgroundColorTimer) clearInterval(this.randomBackgroundColorTimer)
     document.body.style.setProperty('--menu-primary-background-colour', rgba())
   }
 
