@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-27 22:24:20
+ * @LastEditTime: 2021-01-28 15:32:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -10,7 +10,7 @@
 module.exports = {
   title: '二十多岁的老王的个人网站',
   description: 'Just playing around',
-  base: '/MyBlogDeploy/',
+  base: '/blog/',
   themeConfig: {
     lastUpdated: '最后更新', // string | boolean
     nav: [
