@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-28 15:22:11
+ * @LastEditTime: 2021-01-28 15:38:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -123,7 +123,7 @@
 .hide_block
   height: 6px
   top: 15px
-  border-radius: 30px
+  border-radius: 15px
 
 .rever_arrow
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHZSURBVEiJ7ZQ/ixpRFMXPeY6za7IEbbS1EGysUk0TkFjkI1imShFIioVASJsqW2wT8gW2TSsypBCLBLExEBgQ2cxodDdYKBhHDZv5c1Ooi4juGsIWCXvhNo97fu+++857FBHcVKgbI9/C/z84ROQyAahMJnMvn88fAIgB2AegA4guMrJoiAC4qt2UXPU5yT3DMB6l0+kHmqYpEQkWDTAMw8u6MAxJEiIiSikEQRAdjUY/Go3G8XA4HC/rtLVTXBiG0dR1/XkqlXqo6/rPMAw535cQES67XqxRRCKz2cydTqdPVsHAhpnX6/XTyWTy0nXdLyTvRiKRO0qpGMkYyX0AeyR1klEAmud5F7ZtvyiXy+/XWdz2/AuFwv1sNnsSj8dzMi8iyXBxQkUSnuf5rVbrValUOpYNoK1uqVQqn9vt9tPxePxVKbUcC0SESin4vh82m80jx3HebgJfCQcA0zQ/2bb9zHXdbyRBUiml6Pt+4DjOu06n88ayrF/b9Nf63DTND91u99B13e+apsHzPHEc56TX6722LGtylXbrzNejWCw+TiaTR4PB4GO/3z+sVqtn12l2hudyuYNEImEEQdCs1Wrnu2h2hgNzu2y7vL+G/2n8u7/iLXxj/AYhQQQGkT/xPgAAAABJRU5ErkJggg==")
