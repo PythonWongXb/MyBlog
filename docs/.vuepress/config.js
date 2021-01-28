@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-28 15:32:49
+ * @LastEditTime: 2021-01-28 16:00:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -49,6 +49,29 @@ module.exports = {
               text: 'Java',
               link: '/language/japanese/'
               }
+            ]
+          },
+        ]
+      },
+      {
+        text: 'About Me',
+        items: [
+          {
+            text: 'My videos',
+            items: [
+              {
+                text: 'Bilibili',
+                link: 'https://space.bilibili.com/309430466/'
+              },
+            ]
+          },
+          {
+            text: 'Souce Codes',
+            items: [
+              {
+                text: 'GitHub(GayHub) - Home',
+                link: 'https://github.com/PythonWongXb'
+              },
             ]
           },
         ]
