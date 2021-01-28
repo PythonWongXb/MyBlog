@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 11:11:32
- * @LastEditTime: 2021-01-28 15:38:14
+ * @LastEditTime: 2021-01-28 15:41:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/block.vue
@@ -73,7 +73,6 @@
   padding: 22.5px 0 15px 0
 
 .footer
-  margin: 0 1em
   border-top: 1px solid #d3d3d3
   color: #d3d3d3
   padding-top: 0
