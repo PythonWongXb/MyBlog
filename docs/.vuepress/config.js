@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-28 16:00:20
+ * @LastEditTime: 2021-01-28 16:02:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -57,7 +57,7 @@ module.exports = {
         text: 'About Me',
         items: [
           {
-            text: 'My videos',
+            text: 'My Teaching Videos',
             items: [
               {
                 text: 'Bilibili',
