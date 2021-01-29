@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-29 21:26:46
+ * @LastEditTime: 2021-01-29 21:31:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -26,11 +26,11 @@ module.exports = {
               },
               {
                 text: 'Css3',
-                link: '/language/japanese/'
+                link: '/language/Css3/'
               },
               {
                 text: 'Html5',
-                link: '/language/japanese/'
+                link: '/language/Html5/'
               }
             ]
           },
@@ -39,15 +39,15 @@ module.exports = {
             items: [
               {
               text: 'Python',
-              link: '/language/chinese/'
+              link: '/language/Python/'
               },
               {
               text: 'Golang',
-              link: '/language/japanese/'
+              link: '/language/Golang/'
               },
               {
               text: 'Java',
-              link: '/language/japanese/'
+              link: '/language/Java/'
               }
             ]
           },
