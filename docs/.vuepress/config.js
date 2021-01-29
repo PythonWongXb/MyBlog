@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-29 21:31:41
+ * @LastEditTime: 2021-01-29 21:47:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -107,7 +107,7 @@ module.exports = {
             children: [
               {
                 title: 'fibo',
-                path: '/JavaScript/algorithm/a'
+                path: '/JavaScript/algorithm/fibonacci'
               }, ]
           },
         ],
