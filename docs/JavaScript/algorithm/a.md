@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-29 20:57:13
- * @LastEditTime: 2021-01-29 21:27:50
+ * @LastEditTime: 2021-01-29 21:36:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/JavaScript/arg/a.md
@@ -31,9 +31,9 @@ function fibonacci(n, v1, v2) {
 
 const father = fibonacci(5, 1, 2)
 const son = fibonacci(5, 2, 3)
-const sum3 = son.map((item, index) => {
+const sumArray = son.map((item, index) => {
     return [item, father[index]]
   }
 )
-const res = sum3.reduce((acc, cur) => acc + cur[0] / cur[1], 0)
+const res = sumArray.reduce((acc, cur) => acc + cur[0] / cur[1], 0)
 ```
