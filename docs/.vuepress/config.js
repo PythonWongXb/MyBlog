@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-28 16:02:40
+ * @LastEditTime: 2021-01-29 21:26:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -91,7 +91,7 @@ module.exports = {
               {
                 title: '2',
                 path: '/JavaScript/two'
-              }
+              },
             ],
           },
           {
@@ -100,6 +100,15 @@ module.exports = {
             children: [
               '/'
             ]
+          },
+          {
+            title: '算法',
+            path: '/JavaScript/algorithm',
+            children: [
+              {
+                title: 'fibo',
+                path: '/JavaScript/algorithm/a'
+              }, ]
           },
         ],
     },
