@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-29 20:57:13
- * @LastEditTime: 2021-01-29 21:36:47
+ * @LastEditTime: 2021-01-29 22:20:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/JavaScript/arg/a.md
@@ -36,4 +36,36 @@ const sumArray = son.map((item, index) => {
   }
 )
 const res = sumArray.reduce((acc, cur) => acc + cur[0] / cur[1], 0)
+```
+
+```py
+#!/usr/bin/python
+def fibonacci(n, v1, v2):
+    list = []
+    def fib(n, v1, v2):
+        if n == 1:
+          list.append(v1)
+          return
+        elif n == 2:
+          list.append(v1)
+          return
+        else:
+          list.append(v1)
+          fib(n - 1, v2, v1 + v2)
+
+
+    fib(n, v1, v2)
+    return list
+
+
+father = fibonacci(5, 1, 2)
+son = fibonacci(5, 2, 3)
+fibonacciList = []
+for index, item in enumerate(son):
+    fibonacciList.append([item, father[index]])
+
+sum = 0
+for each in fibonacciList:
+    sum += each[0] / each[1]
+print(sum)
 ```
