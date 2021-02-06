@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-01-29 21:47:06
+ * @LastEditTime: 2021-02-06 11:54:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -39,16 +39,60 @@ module.exports = {
             items: [
               {
               text: 'Python',
-              link: '/language/Python/'
+              link: '/Python/'
               },
               {
               text: 'Golang',
-              link: '/language/Golang/'
+              link: '/Golang/'
               },
               {
               text: 'Java',
-              link: '/language/Java/'
+              link: '/Java/'
               }
+            ]
+          },
+        ]
+      },
+      {
+        text: 'Personal Style',
+        items: [
+          {
+            text: 'About Code Quality',
+            items: [
+              {
+                text: 'Bad Codes',
+                link: '/PersonalStyle/Code/BadCodes/'
+              },
+              {
+                text: 'Nice Codes',
+                link: '/PersonalStyle/Code/NiceCodes/'
+              },
+            ]
+          },
+          {
+            text: 'Interviews FrontEnd',
+            items: [
+              {
+                text: 'JavaScript',
+                link: '/PersonalStyle/Interview/FrontEnd/JavaScript/'
+              },
+              {
+                text: 'CSS',
+                link: '/PersonalStyle/Interview/FrontEnd/Css3/'
+              },
+            ]
+          },
+          {
+            text: 'Interviews Backend',
+            items: [
+              {
+                text: 'GoLang',
+                link: '/PersonalStyle/Interview/BackEnd/Golang/'
+              },
+              {
+                text: 'Python',
+                link: '/PersonalStyle/Interview/BackEnd/Python/'
+              },
             ]
           },
         ]
@@ -108,6 +152,38 @@ module.exports = {
               {
                 title: 'fibo',
                 path: '/JavaScript/algorithm/fibonacci'
+              }, ]
+          },
+        ],
+        '/Golang/': [
+          {
+            title: 'Golang基础',
+            path: '/Golang/#1',
+            children: [
+              {
+                title: '1',
+                path: '/Golang/one'
+              },
+              {
+                title: '2',
+                path: '/Golang/two'
+              },
+            ],
+          },
+          {
+            title: 'JavaScript中级',
+            path: '/Golang/#2',
+            children: [
+              '/'
+            ]
+          },
+          {
+            title: '基础',
+            path: '/Golang/primary/',
+            children: [
+              {
+                title: '并发',
+                path: '/Golang/primary/并发'
               }, ]
           },
         ],

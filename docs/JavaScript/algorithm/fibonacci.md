@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-29 20:57:13
- * @LastEditTime: 2021-01-29 22:20:39
+ * @LastEditTime: 2021-02-01 13:39:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/JavaScript/arg/a.md
@@ -52,7 +52,6 @@ def fibonacci(n, v1, v2):
         else:
           list.append(v1)
           fib(n - 1, v2, v1 + v2)
-
 
     fib(n, v1, v2)
     return list
