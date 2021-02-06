@@ -1,12 +1,19 @@
 /*
  * @Author: your name
- * @Date: 2021-01-19 09:07:13
- * @LastEditTime: 2021-02-06 11:54:08
+ * @Date: 2021-01-27 22:17:44
+ * @LastEditTime: 2021-02-06 14:09:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
  */
-
+/*
+ * @Author: your name
+ * @Date: 2021-01-19 09:07:13
+ * @LastEditTime: 2021-02-06 14:05:55
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /vuepress-starter/docs/.vuepress/config.js
+ */
 module.exports = {
   title: '二十多岁的老王的个人网站',
   description: 'Just playing around',
@@ -185,6 +192,104 @@ module.exports = {
                 title: '并发',
                 path: '/Golang/primary/并发'
               }, ]
+          },
+        ],
+        '/PersonalStyle/Code/BadCodes/': [
+          {
+            title: '1-MysteriousName',
+            path: '/PersonalStyle/Code/BadCodes/1-MysteriousName',
+          },
+          {
+            title: '2-DuplicatedCode',
+            path: '/PersonalStyle/Code/BadCodes/2-DuplicatedCode',
+          },
+          {
+            title: '3-LongFunction',
+            path: '/PersonalStyle/Code/BadCodes/3-LongFunction',
+          },
+          {
+            title: '4-LongParameterList',
+            path: '/PersonalStyle/Code/BadCodes/4-LongParameterList',
+          },
+          {
+            title: '5-GlobalData',
+            path: '/PersonalStyle/Code/BadCodes/5-GlobalData',
+          },
+          {
+            title: '6-DivergentChange',
+            path: '/PersonalStyle/Code/BadCodes/6-DivergentChange',
+          },
+          {
+            title: '7-MutableData',
+            path: '/PersonalStyle/Code/BadCodes/7-MutableData',
+          },
+          {
+            title: '8-ShotgunSurgery',
+            path: '/PersonalStyle/Code/BadCodes/8-ShotgunSurgery',
+          },
+          {
+            title: '9-FeatureEnvy',
+            path: '/PersonalStyle/Code/BadCodes/9-FeatureEnvy',
+          },
+          {
+            title: '10-DataClumps',
+            path: '/PersonalStyle/Code/BadCodes/10-DataClumps',
+          },
+          {
+            title: '11-PimitiveObsession',
+            path: '/PersonalStyle/Code/BadCodes/11-PimitiveObsession',
+          },
+          {
+            title: '12-RepeatedSwitches',
+            path: '/PersonalStyle/Code/BadCodes/12-RepeatedSwitches',
+          },
+          {
+            title: '13-Loops',
+            path: '/PersonalStyle/Code/BadCodes/13-Loops',
+          },
+          {
+            title: '14-LazyElement',
+            path: '/PersonalStyle/Code/BadCodes/14-LazyElement',
+          },
+          {
+            title: '15-SpeculativeGenerality',
+            path: '/PersonalStyle/Code/BadCodes/15-SpeculativeGenerality',
+          },
+          {
+            title: '16-TemporaryField',
+            path: '/PersonalStyle/Code/BadCodes/16-TemporaryField',
+          },
+          {
+            title: '17-MessageChains',
+            path: '/PersonalStyle/Code/BadCodes/17-MessageChains',
+          },
+          {
+            title: '18-MiddleMan',
+            path: '/PersonalStyle/Code/BadCodes/18-MiddleMan',
+          },
+          {
+            title: '19-InsiderTrading',
+            path: '/PersonalStyle/Code/BadCodes/19-InsiderTrading',
+          },
+          {
+            title: '20-LargeClass',
+            path: '/PersonalStyle/Code/BadCodes/20-LargeClass',
+          },
+          {
+            title: '21-AlternativeClassWithDifferentInterfaces',
+            path: '/PersonalStyle/Code/BadCodes/21-AlternativeClassWithDifferentInterfaces',
+          },
+          {
+            title: '22-DataClass',
+            path: '/PersonalStyle/Code/BadCodes/22-DataClass',
+          },
+          {
+            title: '23-RefusedBequest',
+            path: '/PersonalStyle/Code/BadCodes/23-RefusedBequest',
+          },
+          {
+            title: '24-Comments',
+            path: '/PersonalStyle/Code/BadCodes/24-Comments',
           },
         ],
     },
