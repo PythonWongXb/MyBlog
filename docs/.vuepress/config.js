@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-10 12:36:58
+ * @LastEditTime: 2021-02-10 12:52:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -357,6 +357,24 @@ module.exports = {
           path: '/Projects/VenueOnlineManageSystem/5-LocalStorageDataConstruction',
           children: [
             '/'
+          ]
+        },
+        {
+          title: '6-项目核心难点',
+          path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve',
+          children: [
+            {
+              title: '多Venue数据架构',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-0-MutipleVenue/'
+            },
+            {
+              title: '监听页面跳转',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-1-WacthPageChange/'
+            },
+            {
+              title: '主题颜色的控制',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-2-ThemeColor/'
+            },
           ]
         },
       ],
