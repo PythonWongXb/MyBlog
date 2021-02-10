@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-09 20:47:23
+ * @LastEditTime: 2021-02-10 12:36:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -307,12 +307,20 @@ module.exports = {
           path: '/Projects/VenueOnlineManageSystem/0-FileConstruction',
           children: [
             {
-              title: '静态文件',
+              title: '项目文件架构',
               path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-1-StaticFile/'
             },
             {
               title: 'View架构',
               path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-2-ViewConstruction/'
+            },
+            {
+              title: '环境变量',
+              path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-3-EnvironmentVaries/'
+            },
+            {
+              title: '插件',
+              path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-4-Plugins/'
             },
           ],
         },
