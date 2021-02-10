@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-10 12:52:44
+ * @LastEditTime: 2021-02-10 20:39:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -311,10 +311,6 @@ module.exports = {
               path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-1-StaticFile/'
             },
             {
-              title: 'View架构',
-              path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-2-ViewConstruction/'
-            },
-            {
               title: '环境变量',
               path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-3-EnvironmentVaries/'
             },
@@ -376,6 +372,14 @@ module.exports = {
               path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-2-ThemeColor/'
             },
           ]
+        },
+        {
+          title: '7-View架构',
+          path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction',
+          children: [{
+            title: 'Tab',
+            path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-0-Tab/'
+          }, ]
         },
       ],
     },
