@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-10 20:39:05
+ * @LastEditTime: 2021-02-10 20:41:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -321,42 +321,50 @@ module.exports = {
           ],
         },
         {
-          title: '1-组件架构',
+          title: '1-View架构',
+          path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction',
+          children: [{
+            title: 'Tab',
+            path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-0-Tab/'
+          }, ]
+        },
+        {
+          title: '2-组件架构',
           path: '/Projects/VenueOnlineManageSystem/1-ComponentConstruction',
           children: [
             '/'
           ]
         },
         {
-          title: '2-路由架构',
+          title: '3-路由架构',
           path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction',
           children: [
             '/'
           ]
         },
         {
-          title: '3-Axios架构',
+          title: '4-Axios架构',
           path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction',
           children: [
             '/'
           ]
         },
         {
-          title: '4-Vuex数据架构',
+          title: '5-Vuex数据架构',
           path: '/Projects/VenueOnlineManageSystem/4-VuexDataConstruction',
           children: [
             '/'
           ]
         },
         {
-          title: '5-LocalStorage数据架构',
+          title: '6-LocalStorage数据架构',
           path: '/Projects/VenueOnlineManageSystem/5-LocalStorageDataConstruction',
           children: [
             '/'
           ]
         },
         {
-          title: '6-项目核心难点',
+          title: '7-项目核心难点',
           path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve',
           children: [
             {
@@ -372,14 +380,6 @@ module.exports = {
               path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-2-ThemeColor/'
             },
           ]
-        },
-        {
-          title: '7-View架构',
-          path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction',
-          children: [{
-            title: 'Tab',
-            path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-0-Tab/'
-          }, ]
         },
       ],
     },
