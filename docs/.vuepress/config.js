@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-11 10:53:05
+ * @LastEditTime: 2021-02-11 11:23:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -394,16 +394,36 @@ module.exports = {
           path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve',
           children: [
             {
-              title: '多Venue数据架构',
+              title: '1-app.vue核心架构讲解',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-7-AppVue/'
+            },
+            {
+              title: '2-多Venue数据架构',
               path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-0-MutipleVenue/'
             },
             {
-              title: '监听页面跳转',
+              title: '3-监听页面跳转',
               path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-1-WacthPageChange/'
             },
             {
-              title: '主题颜色的控制',
+              title: '4-主题颜色的控制',
               path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-2-ThemeColor/'
+            },
+            {
+              title: '5-nav中切换箭头与menu的方式',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-3-navSetting/'
+            },
+            {
+              title: '6-mixin的使用',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-4-Mixin/'
+            },
+            {
+              title: '7-loading使用',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-5-Loading/'
+            },
+            {
+              title: '8-decorator的使用',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-6-Decorator/'
             },
           ]
         },
