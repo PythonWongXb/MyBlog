@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-10 12:45:06
- * @LastEditTime: 2021-02-11 19:56:11
+ * @LastEditTime: 2021-02-11 20:03:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/README.md
@@ -65,3 +65,15 @@ async __checkVenueOpenTime() {
 
 ## 2-有什么好处呢
 这里的逻辑代码是一模一样的，这样利用mixin可以实现最大的复用性，而且不会丢失this指向
+
+## 3-坏处
+1. 同名被覆盖
+2. 无法在本文件中找到变量或者函数，造成疑惑
+3. 降低了代码可维护性
+
+## 4-解决方案
+1. 起一个能识别的名字
+  + 变量 => variableMinxin
+  + function => __functionName
+
+2. 在Vue调试工具中可以继续调试mixin中的变量
