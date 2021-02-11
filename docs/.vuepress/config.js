@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-10 20:41:48
+ * @LastEditTime: 2021-02-11 09:46:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -323,10 +323,24 @@ module.exports = {
         {
           title: '1-View架构',
           path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction',
-          children: [{
-            title: 'Tab',
-            path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-0-Tab/'
-          }, ]
+          children: [
+            {
+              title: 'tab-user',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-0-TabUser/'
+            },
+            {
+              title: 'tab-admin',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-1-TabAdmin/'
+            },
+            {
+              title: 'checkin',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-2-CheckIn/'
+            },
+            {
+              title: 'Normal',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-3-Normal/'
+            },
+          ]
         },
         {
           title: '2-组件架构',
