@@ -1,9 +1,15 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-10 12:45:06
- * @LastEditTime: 2021-02-10 12:51:13
+ * @LastEditTime: 2021-02-11 14:29:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/README.md
 -->
-# 6-2-ThemeColor
+# App.vue
+
+::: warning
+核心架构
+1. 除了特殊页面外，所有页面都会请求getVenue获取venueId
+2. 如果有userId会请求getUser获取 当前user是否已经拥有了tab
+:::
