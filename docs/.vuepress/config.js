@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-11 09:46:12
+ * @LastEditTime: 2021-02-11 10:41:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -137,7 +137,7 @@ module.exports = {
         ]
       }
     ],
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     sidebar: {
       '/JavaScript/': [
         {
@@ -337,8 +337,20 @@ module.exports = {
               path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-2-CheckIn/'
             },
             {
-              title: 'Normal',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-3-Normal/'
+              title: '兼容PC',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-3-PC/'
+            },
+            {
+              title: '所有餐厅',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-4-VenueGrounp/'
+            },
+            {
+              title: '错误页面',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-5-ErrorPage/'
+            },
+            {
+              title: '正常页面',
+              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-6-Normal/'
             },
           ]
         },
