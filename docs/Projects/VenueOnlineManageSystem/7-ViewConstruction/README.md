@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-09 18:50:38
- * @LastEditTime: 2021-02-11 10:46:47
+ * @LastEditTime: 2021-02-11 10:53:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/README.md
@@ -16,4 +16,4 @@ View的分类大致有4类，以表格的形式列出：
 | PC | 兼容PC端的页面展示，用到了iframe的方式     |  views -> pc  |
 | VenueGrounp | 所有餐厅的列表页面      |  views ->  venue-grounp  |
 | 错误页面 | 页面出现错误时展示的页面     |  views -> error  |
-| Normal | 其他正常用户进行非tab支付的相关页面      |  views ->  除去以上情况的其他页面  |
+| 其他正常页面 | 其他正常用户进行非tab支付的相关页面      |  views ->  除去以上情况的其他页面  |

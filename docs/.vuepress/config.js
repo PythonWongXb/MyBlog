@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-11 10:41:00
+ * @LastEditTime: 2021-02-11 10:53:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -349,7 +349,7 @@ module.exports = {
               path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-5-ErrorPage/'
             },
             {
-              title: '正常页面',
+              title: '其他正常页面',
               path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-6-Normal/'
             },
           ]
