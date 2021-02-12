@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-01-27 22:30:42
+ * @LastEditTime: 2021-02-12 22:11:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -47,14 +47,32 @@
   border-bottom: none !important
   background-color: var(--menu-primary-background-colour) !important
   transition: all 2s ease !important
+
+.player
+  position: fixed
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+
 </style>
 
 <template lang="pug">
-.app_container(:style="{'background-image': `url(http://www.ruanyifeng.com/images_pub/pub_${currentNumber}.jpg)`}")
+.app_container(
+  :style="{'background-image': `url(http://www.ruanyifeng.com/images_pub/pub_${currentNumber}.jpg)`}"
+)
   //- img for cache
   img.demo_img(v-show="false" :src="nextSrc")
   home-page-block(
     @nextPic="handleClickTitle"
+  )
+  audio.player(
+    v-show="false"
+    preload="preload"
+    controls
+    autoplay
+    title="送你一朵小红花"
+    meta="送你一朵小红花"
+    :src="musicSrc"
   )
 
 </template>
@@ -89,6 +107,7 @@ import {
 })
 
 class Home extends Vue {
+  musicSrc = 'http://tx.stream.kg.qq.com/szkge-btfs/3725e5b10fe1f3e092c5e9d491bd5af94179a1df?ftnrkey=f66d7fc7241b76cd95b78ee3dd11165a12da947cf2550ced9ceda9cf246431e72f3495f717722dce0c1ce1293ba43171e415b26e6a3a5d122431c01e194a8432&amp;vkey=1B803D5A65ACDF28D380718D6DF2803C6E4A9122DCB4628194DFAA8FE9DC7F5632376F890383317FBE51712B1246E70857945F154819C5A76789C7AF548B11AC4A02757DECF56647151F2FBFB5F411E5EF1B8548811C589D&amp;fname=1021_98c38bd55448d8b9547e47ef80f999fc7081dbad.0.m4a&amp;fromtag=1006&amp;sdtfrom=v1006&amp;ugcid=48190785_1613131467_862'
   nextPicNumber = 0
   currentNumber = 0
   randomBackgroundPicTimer = null
