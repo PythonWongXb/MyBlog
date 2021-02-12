@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-12 08:25:51
+ * @LastEditTime: 2021-02-12 13:17:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -372,7 +372,18 @@ module.exports = {
           title: '4-Axios架构',
           path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction',
           children: [
-            '/'
+            {
+              title: '1-Axios设置',
+              path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction/3-1-AxiosSetting/'
+            },
+            {
+              title: '2-错误拦截',
+              path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction/3-2-ErrorInteract/'
+            },
+            {
+              title: '3-错误展示',
+              path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction/3-3-ErrorShow/'
+            },
           ]
         },
         {
