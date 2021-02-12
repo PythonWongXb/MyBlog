@@ -1,13 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-09 18:50:38
- * @LastEditTime: 2021-02-11 10:53:46
+ * @LastEditTime: 2021-02-12 11:39:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/README.md
 -->
-# 7-ViewConstruction
-View的分类大致有4类，以表格的形式列出：
+# 1-ViewConstruction
+View的分类大致有一下几类，以表格的形式列出：
 | 类别名        | 说明           | 文件位置 |
 | ------------- |:-------------:| -----|
 | tab-user     | tab相关业务中，用户自己使用的tabPay支付、自己建立tab、tab特定的Order成功页面 | views -> tab-user  |

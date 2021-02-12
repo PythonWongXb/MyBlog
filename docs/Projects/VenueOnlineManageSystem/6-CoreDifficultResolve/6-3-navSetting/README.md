@@ -1,9 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-10 12:45:06
- * @LastEditTime: 2021-02-10 12:51:13
+ * @LastEditTime: 2021-02-12 10:29:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/README.md
 -->
-# 6-2-ThemeColor
+# Nav的Menu转换问题
+[Bilibili视频地址](https://www.bilibili.com/video/BV1Hz4y127dy/)

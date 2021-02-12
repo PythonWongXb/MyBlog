@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-12 08:28:08
- * @LastEditTime: 2021-02-12 08:40:11
+ * @LastEditTime: 2021-02-12 08:48:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/VenueOnlineManageSystem/8-Decorators/README.md
@@ -22,10 +22,10 @@
 
 ## 3-本质
 + 本质上讲，js中的函数是不能使用装饰器函数的，因为函数存在提升。
-+ 我们所使用的装饰器，其实本质上来时利用了函数柯里化于工厂函数的概念。
++ 我们所使用的装饰器，其实本质上来时利用了函数柯里化与工厂函数的概念。
 
 ## 4-例子
-```js
+```js {3,6}
 const loading = (loadingArgName) => (target, name, descriptor) => {
   const fn = descriptor.value
   descriptor.value = async function (...arg) {
