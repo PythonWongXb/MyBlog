@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-12 13:17:57
+ * @LastEditTime: 2021-02-12 14:17:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -365,7 +365,14 @@ module.exports = {
           title: '3-路由架构',
           path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction',
           children: [
-            '/'
+            {
+              title: '1-文件结构',
+              path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction/2-0-FileConstruction/'
+            },
+            {
+              title: '2-Router拦截',
+              path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction/2-1-RouterInteract/'
+            },
           ]
         },
         {
