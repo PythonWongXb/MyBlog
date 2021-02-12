@@ -1,15 +1,16 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-10 12:45:06
- * @LastEditTime: 2021-02-11 20:03:09
+ * @LastEditTime: 2021-02-12 08:41:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/README.md
 -->
 # Mixin
 ::: tip
-  为什么用mixin呢？
-  因为有大量复用性需求的时候，用mixin能最简单的解决问题
+  1. 为什么用mixin呢？
+  2. 因为有大量复用性需求的时候，用mixin能最简单的解决问题
+  3. @文件路径: /frontend-user/src/utils/mixin.js
 :::
 ## 1-有什么需要呢？
 1. 一个需求是当点击确定按钮跳转下一页的时候，要检查一下当前venue是不是营业状态，如果venue已经关门要跳转到venue-home页面，还要展示对应的venue关门页面。
