@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-12 14:17:43
+ * @LastEditTime: 2021-02-13 09:06:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -442,6 +442,14 @@ module.exports = {
             {
               title: '8-decorator的使用',
               path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-6-Decorator/'
+            },
+            {
+              title: '9-支付方式',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-8-Payments/'
+            },
+            {
+              title: '10-打印功能',
+              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-9-Print/'
             },
           ]
         },

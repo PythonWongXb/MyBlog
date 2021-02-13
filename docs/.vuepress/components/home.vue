@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-02-12 22:11:53
+ * @LastEditTime: 2021-02-13 09:02:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -66,7 +66,6 @@
     @nextPic="handleClickTitle"
   )
   audio.player(
-    v-show="false"
     preload="preload"
     controls
     autoplay
