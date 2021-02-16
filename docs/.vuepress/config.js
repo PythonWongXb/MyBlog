@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-16 20:24:06
+ * @LastEditTime: 2021-02-16 20:27:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -61,6 +61,10 @@ module.exports = {
           {
             text: 'Others',
             items: [
+              {
+                text: 'Vim',
+                link: '/Vim/'
+              },
               {
                 text: 'Linux',
                 link: '/Linux/'
