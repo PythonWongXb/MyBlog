@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-13 09:06:42
+ * @LastEditTime: 2021-02-16 14:07:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -225,12 +225,12 @@ module.exports = {
           path: '/PersonalStyle/Code/BadCodes/5-GlobalData',
         },
         {
-          title: '6-DivergentChange',
-          path: '/PersonalStyle/Code/BadCodes/6-DivergentChange',
+          title: '6-MutableData',
+          path: '/PersonalStyle/Code/BadCodes/6-MutableData',
         },
         {
-          title: '7-MutableData',
-          path: '/PersonalStyle/Code/BadCodes/7-MutableData',
+          title: '7-DivergentChange',
+          path: '/PersonalStyle/Code/BadCodes/7-DivergentChange',
         },
         {
           title: '8-ShotgunSurgery',
