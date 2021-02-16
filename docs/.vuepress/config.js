@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-16 14:07:46
+ * @LastEditTime: 2021-02-16 20:24:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -45,16 +45,33 @@ module.exports = {
             text: 'BackEnd',
             items: [
               {
-              text: 'Python',
-              link: '/Python/'
+                text: 'Python',
+                link: '/Python/'
               },
               {
-              text: 'Golang',
-              link: '/Golang/'
+                text: 'Golang',
+                link: '/Golang/'
               },
               {
-              text: 'Java',
-              link: '/Java/'
+                text: 'Java',
+                link: '/Java/'
+              }
+            ]
+          },
+          {
+            text: 'Others',
+            items: [
+              {
+                text: 'Linux',
+                link: '/Linux/'
+              },
+              {
+                text: 'MarkDown',
+                link: '/MarkDown/'
+              },
+              {
+                text: 'Shell',
+                link: '/Shell/'
               }
             ]
           },
