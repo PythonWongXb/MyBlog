@@ -1,9 +1,25 @@
-<!--
- * @Author: your name
- * @Date: 2021-02-16 20:21:32
- * @LastEditTime: 2021-02-16 20:22:13
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /vuepress-starter/docs/Css3/README.md
--->
+---
+sidebar: auto
+---
+
 # Shell
+
+## 变量
+
+## 传递参数
+
+## 数组
+
+## 运算符
+
+## echo命令
+
+## test 命令
+
+## 流程控制
+
+## 函数
+
+## 输入/输入重定向
+
+## 文件包含
