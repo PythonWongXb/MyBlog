@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-16 20:27:53
+ * @LastEditTime: 2021-02-17 21:50:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -30,6 +30,10 @@ module.exports = {
               {
                 text: 'JavaScript',
                 link: '/JavaScript/'
+              },
+              {
+                text: 'TypeScript',
+                link: '/TypeScript/'
               },
               {
                 text: 'Css3',
