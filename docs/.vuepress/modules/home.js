@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-25 14:27:14
- * @LastEditTime: 2021-02-16 10:44:55
+ * @LastEditTime: 2021-02-17 21:36:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/modules/home.js
@@ -32,11 +32,11 @@ const MY_OWN_MUSIC_LIST = [
 
 let MUSIC_LIST = [
   {
-    src: 'https://webfs.yun.kugou.com/202102161026/453299ad1991151f8815b642bf4579d6/KGTX/CLTX001/cafae74961759d24ba3b7d973ab2f267.mp3',
+    src: 'https://mp32.9ku.com/upload/128/2020/12/18/1013609.mp3',
     title: '送你一朵小红花',
   },
   {
-    src: 'https://webfs.yun.kugou.com/202102161041/26727c70c9f0481d496d7cb02a9d0e35/G201/M07/10/0F/CQ4DAF5uwnWAFdqvACtsrbV_5mA181.mp3',
+    src: 'https://mp3.9ku.com/hot/2012/02-20/464181.mp3',
     title: '都选C',
   },
 ]
