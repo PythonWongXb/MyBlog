@@ -23,7 +23,7 @@ chmod +x ./test.sh  #使脚本具有执行权限
 /bin/sh test.sh
 ```
 
-## 变量
+## 1-变量
 + 命名只能使用英文字母，数字和下划线，首个字符不能以数字开头。
 + 中间不能有空格，可以使用下划线（_）。
 + 不能使用标点符号。
@@ -67,7 +67,7 @@ unset variable_name
 2. 环境变量 所有的程序，包括shell启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行。必要的时候shell脚本也可以定义环境变量。
 3. shell变量 shell变量是由shell程序设置的特殊变量。shell变量中有一部分是环境变量，有一部分是局部变量，这些变量保证了shell的正常运行
 
-## Shell 字符串
+## 2-Shell 字符串
 
 ```shell
 your_name="runoob"
@@ -108,8 +108,7 @@ string="runoob is a great site"
 echo `expr index "$string" io`  # 输出 4
 ```
 
-## 传递参数
-## 数组
+## 3-Shell数组
 
 ## 运算符
 
