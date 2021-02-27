@@ -17,8 +17,7 @@ sidebar: auto
 ## test 命令
 
 ## 流程控制
-sds
-pwd
+
 ## 函数
 
 ## 输入/输入重定向

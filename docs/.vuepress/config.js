@@ -99,6 +99,10 @@ module.exports = {
                 text: 'Nice Codes',
                 link: '/PersonalStyle/Code/NiceCodes/'
               },
+              {
+                text: 'Coding Info',
+                link: '/PersonalStyle/CodingInfo/'
+              },
             ]
           },
           {
