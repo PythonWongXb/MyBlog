@@ -906,8 +906,211 @@ fi
 ```
 :::
 
-## 流程控制
+## 10-if-流程控制
+和 Java、PHP 等语言不一样，sh 的流程控制不可为空，如(以下为 PHP 流程控制写法)：
+```php
+if (isset($_GET["q"])) {
+    search(q);
+}
+else {
+    // 不做任何事情
+}
+```
+::: danger
+在 sh/bash 里可不能这么写，如果 else 分支没有语句执行，就不要写这个 else。
+:::
 
+### if
+```shell
+if condition
+then
+    command1
+    command2
+    ...
+    commandN
+fi
+
+# shortcut
+if [ $(ps -ef | grep -c "ssh") -gt 1 ]; then echo "true"; fi
+```
+### if-else
+```shell
+if condition
+then
+    command1
+    command2
+    ...
+    commandN
+else
+    command
+fi
+```
+### if-elif-else
+```shell
+if condition1
+then
+    command1
+elif condition2
+then
+    command2
+else
+    commandN
+fi
+```
+
+```shell
+a=10
+b=20
+if [ $a == $b ]
+then
+   echo "a 等于 b"
+elif [ $a -gt $b ]
+then
+   echo "a 大于 b"
+elif [ $a -lt $b ]
+then
+   echo "a 小于 b"
+else
+   echo "没有符合的条件"
+fi
+
+# result
+a 小于 b
+```
+
+::: tip
+if else 语句经常与 test 命令结合使用，如下所示：
+:::
+
+```shell
+num1=$[2*3]
+num2=$[1+5]
+if test $[num1] -eq $[num2]
+then
+    echo '两个数字相等!'
+else
+    echo '两个数字不相等!'
+fi
+
+# result
+两个数字相等!
+```
+
+## 11-for-循环-流程控制
+```shell
+for var in item1 item2 ... itemN
+do
+    command1
+    command2
+    ...
+    commandN
+done
+
+# shortcut
+for var in item1 item2 ... itemN; do command1; command2… done;
+```
+当变量值在列表里，for 循环即执行一次所有命令，使用变量名获取列表中的当前取值。命令可为任何有效的 shell 命令和语句。in 列表可以包含替换、字符串和文件名。
+
+in列表是可选的，如果不用它，for循环使用命令行的位置参数。
+
+例如，顺序输出当前列表中的数字：
+
+```shell
+for loop in 1 2 3 4 5
+do
+    echo "The value is: $loop"
+done
+
+# result
+The value is: 1
+The value is: 2
+The value is: 3
+The value is: 4
+The value is: 5
+```
+
+```shell
+#!/bin/bash
+
+# 顺序输出字符串中的字符：
+for str in This is a string
+do
+    echo $str
+done
+
+# result
+This
+is
+a
+string
+```
+
+## 12-while-循环-流程控制
+while 循环用于不断执行一系列命令，也用于从输入文件中读取数据。其语法格式为：
+
+```shell
+while condition
+do
+    command
+done
+```
+
+以下是一个基本的 while 循环，测试条件是：如果 int 小于等于 5，那么条件返回真。int 从 1 开始，每次循环处理时，int 加 1。运行上述脚本，返回数字 1 到 5，然后终止。
+
+```shell
+#!/bin/bash
+int=1
+while(( $int<=5 ))
+do
+    echo $int
+    let "int++"
+done
+
+# result
+1
+2
+3
+4
+5
+```
+
+::: tip
+以上实例使用了 Bash let 命令，它用于执行一个或多个表达式，变量计算中不需要加上 $ 来表示变量，具体可查阅：Bash let 命令
+:::
+
+while循环可用于读取键盘信息。下面的例子中，输入信息被设置为变量FILM，按<Ctrl-D>结束循环。
+
+```shell
+echo '按下 <CTRL-D> 退出'
+echo -n '输入你最喜欢的网站名: '
+while read FILM
+do
+    echo "是的！$FILM 是一个好网站"
+done
+
+# result
+按下 <CTRL-D> 退出
+输入你最喜欢的网站名:菜鸟教程
+是的！菜鸟教程 是一个好网站
+```
+
+### 无限循环
+
+```shell
+while :
+do
+    command
+done
+
+# or
+while true
+do
+    command
+done
+
+# or
+for (( ; ; ))
+```
 ## 函数
 
 ## 输入/输入重定向
