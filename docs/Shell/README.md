@@ -1302,8 +1302,154 @@ done
 
 :::
 
-## 函数
+## 13-函数
+linux shell 可以用户定义函数，然后在shell脚本中可以随便调用。
 
-## 输入/输入重定向
+### 基本用法
+::: tip
+说明：
 
-## 文件包含
++ 可以带function fun() 定义，也可以直接fun() 定义,不带任何参数。
++ 参数返回，可以显示加：return 返回，如果不加，将以最后一条命令运行结果，作为返回值。 return后跟数值n(0-255
+:::
+
+```shell
+[ function ] funname [()]
+
+{
+
+    action;
+
+    [return int;]
+
+}
+```
+
+```shell
+#!/bin/bash
+# author:菜鸟教程
+# url:www.runoob.com
+
+demoFun(){
+    echo "这是我的第一个 shell 函数!"
+}
+echo "-----函数开始执行-----"
+demoFun
+echo "-----函数执行完毕-----"
+
+# result
+-----函数开始执行-----
+这是我的第一个 shell 函数!
+-----函数执行完毕-----
+```
+
+::: tip
+下面定义一个带有return语句的函数：
+:::
+
+```shell
+#!/bin/bash
+# author:菜鸟教程
+# url:www.runoob.com
+
+funWithReturn(){
+    echo "这个函数会对输入的两个数字进行相加运算..."
+    echo "输入第一个数字: "
+    read aNum
+    echo "输入第二个数字: "
+    read anotherNum
+    echo "两个数字分别为 $aNum 和 $anotherNum !"
+    return $(($aNum+$anotherNum))
+}
+funWithReturn
+echo "输入的两个数字之和为 $? !"
+
+# result
+这个函数会对输入的两个数字进行相加运算...
+输入第一个数字:
+1
+输入第二个数字:
+2
+两个数字分别为 1 和 2 !
+输入的两个数字之和为 3 !
+```
+
+::: warning
++ 函数返回值在调用该函数后通过 $? 来获得。
++ 注意：所有函数在使用前必须定义。这意味着必须将函数放在脚本开始部分，直至shell解释器首次发现它时，才可以使用。调用函数仅使用其函数名即可。
+:::
+
+### 函数参数
+在Shell中，调用函数时可以向其传递参数。在函数体内部，通过 $n 的形式来获取参数的值，例如，$1表示第一个参数，$2表示第二个参数...
+
+```shell
+#!/bin/bash
+# author:菜鸟教程
+# url:www.runoob.com
+
+funWithParam(){
+    echo "第一个参数为 $1 !"
+    echo "第二个参数为 $2 !"
+    echo "第十个参数为 $10 !"
+    echo "第十个参数为 ${10} !"
+    echo "第十一个参数为 ${11} !"
+    echo "参数总数有 $# 个!"
+    echo "作为一个字符串输出所有参数 $* !"
+}
+funWithParam 1 2 3 4 5 6 7 8 9 34 73
+
+# result
+第一个参数为 1 !
+第二个参数为 2 !
+第十个参数为 10 !
+第十个参数为 34 !
+第十一个参数为 73 !
+参数总数有 11 个!
+作为一个字符串输出所有参数 1 2 3 4 5 6 7 8 9 34 73 !
+```
+
+::: warning
+注意，$10 不能获取第十个参数，获取第十个参数需要${10}。当n>=10时，需要使用${n}来获取参数
+:::
+
+::: danger
++ $? 仅对其上一条指令负责，一旦函数返回后其返回值没有立即保存入参数，那么其返回值将不再能通过 $? 获得。
+
++ expr这个函数会在shell里面展示结果，但不是真实的return值
+
+```shell{12}
+#!/bin/bash
+function demoFun1(){
+    echo "这是我的第一个 shell 函数!"
+    return `expr 1 + 1`
+}
+
+demoFun1
+echo $?
+
+function demoFun2(){
+ echo "这是我的第二个 shell 函数!"
+ expr 1 + 1
+}
+
+demoFun2
+echo $?
+demoFun1
+echo 在这里插入命令！
+echo $?
+
+# result
+这是我的第一个 shell 函数!
+2
+这是我的第二个 shell 函数!
+2 // expr这个函数会在shell里面展示结果，但不是真实的return值
+0
+这是我的第一个 shell 函数!
+在这里插入命令！
+0
+```
+:::
+// @todo continuous to integration
+##输入/输入重定向
+
+##文件包含
