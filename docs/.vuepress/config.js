@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-02-17 21:50:26
+ * @LastEditTime: 2021-03-07 20:35:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -157,12 +157,35 @@ module.exports = {
         ]
       },
       {
-        text: 'Projects',
+        text: 'Frames',
         items: [
           {
-            text: 'VenueOnlineManageSystem',
-            link: '/Projects/VenueOnlineManageSystem/'
+            text: 'FrontEnd',
+            items: [
+              {
+                text: 'Vue3',
+                link: '/Frames/Vue3/'
+              },
+            ]
           },
+          {
+            text: 'BackEnd',
+            items: [
+              {
+                text: 'nodejs',
+                link: '/Frames/Nodejs/'
+              },
+            ]
+          },
+          {
+            text: 'Projects',
+            items: [
+              {
+                text: 'VenueOnlineManageSystem',
+                link: '/Frames/VenueOnlineManageSystem/'
+              },
+            ]
+          }
         ]
       }
     ],
@@ -330,155 +353,155 @@ module.exports = {
           path: '/PersonalStyle/Code/BadCodes/24-Comments',
         },
       ],
-      '/Projects/VenueOnlineManageSystem/': [
+      '/Frames/VenueOnlineManageSystem/': [
         {
           title: '0-文件架构',
-          path: '/Projects/VenueOnlineManageSystem/0-FileConstruction',
+          path: '/Frames/VenueOnlineManageSystem/0-FileConstruction',
           children: [
             {
               title: '项目文件架构',
-              path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-1-StaticFile/'
+              path: '/Frames/VenueOnlineManageSystem/0-FileConstruction/0-1-StaticFile/'
             },
             {
               title: '环境变量',
-              path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-3-EnvironmentVaries/'
+              path: '/Frames/VenueOnlineManageSystem/0-FileConstruction/0-3-EnvironmentVaries/'
             },
             {
               title: '插件',
-              path: '/Projects/VenueOnlineManageSystem/0-FileConstruction/0-4-Plugins/'
+              path: '/Frames/VenueOnlineManageSystem/0-FileConstruction/0-4-Plugins/'
             },
           ],
         },
         {
           title: '1-View架构',
-          path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction',
+          path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction',
           children: [
             {
               title: 'tab-user',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-0-TabUser/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-0-TabUser/'
             },
             {
               title: 'tab-admin',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-1-TabAdmin/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-1-TabAdmin/'
             },
             {
               title: 'checkin',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-2-CheckIn/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-2-CheckIn/'
             },
             {
               title: '兼容PC',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-3-PC/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-3-PC/'
             },
             {
               title: '所有餐厅',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-4-VenueGrounp/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-4-VenueGrounp/'
             },
             {
               title: '错误页面',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-5-ErrorPage/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-5-ErrorPage/'
             },
             {
               title: '其他正常页面',
-              path: '/Projects/VenueOnlineManageSystem/7-ViewConstruction/7-6-Normal/'
+              path: '/Frames/VenueOnlineManageSystem/7-ViewConstruction/7-6-Normal/'
             },
           ]
         },
         {
           title: '2-组件架构',
-          path: '/Projects/VenueOnlineManageSystem/1-ComponentConstruction',
+          path: '/Frames/VenueOnlineManageSystem/1-ComponentConstruction',
           children: [
             '/'
           ]
         },
         {
           title: '3-路由架构',
-          path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction',
+          path: '/Frames/VenueOnlineManageSystem/2-VueRouterConstruction',
           children: [
             {
               title: '1-文件结构',
-              path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction/2-0-FileConstruction/'
+              path: '/Frames/VenueOnlineManageSystem/2-VueRouterConstruction/2-0-FileConstruction/'
             },
             {
               title: '2-Router拦截',
-              path: '/Projects/VenueOnlineManageSystem/2-VueRouterConstruction/2-1-RouterInteract/'
+              path: '/Frames/VenueOnlineManageSystem/2-VueRouterConstruction/2-1-RouterInteract/'
             },
           ]
         },
         {
           title: '4-Axios架构',
-          path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction',
+          path: '/Frames/VenueOnlineManageSystem/3-AxiosConstruction',
           children: [
             {
               title: '1-Axios设置',
-              path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction/3-1-AxiosSetting/'
+              path: '/Frames/VenueOnlineManageSystem/3-AxiosConstruction/3-1-AxiosSetting/'
             },
             {
               title: '2-错误拦截',
-              path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction/3-2-ErrorInteract/'
+              path: '/Frames/VenueOnlineManageSystem/3-AxiosConstruction/3-2-ErrorInteract/'
             },
             {
               title: '3-错误展示',
-              path: '/Projects/VenueOnlineManageSystem/3-AxiosConstruction/3-3-ErrorShow/'
+              path: '/Frames/VenueOnlineManageSystem/3-AxiosConstruction/3-3-ErrorShow/'
             },
           ]
         },
         {
           title: '5-Vuex数据架构',
-          path: '/Projects/VenueOnlineManageSystem/4-VuexDataConstruction',
+          path: '/Frames/VenueOnlineManageSystem/4-VuexDataConstruction',
           children: [
             '/'
           ]
         },
         {
           title: '6-LocalStorage数据架构',
-          path: '/Projects/VenueOnlineManageSystem/5-LocalStorageDataConstruction',
+          path: '/Frames/VenueOnlineManageSystem/5-LocalStorageDataConstruction',
           children: [
             '/'
           ]
         },
         {
           title: '7-项目核心难点',
-          path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve',
+          path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve',
           children: [
             {
               title: '1-app.vue核心架构讲解',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-7-AppVue/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-7-AppVue/'
             },
             {
               title: '2-多Venue数据架构',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-0-MutipleVenue/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-0-MutipleVenue/'
             },
             {
               title: '3-监听页面跳转',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-1-WacthPageChange/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-1-WacthPageChange/'
             },
             {
               title: '4-主题颜色的控制',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-2-ThemeColor/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-2-ThemeColor/'
             },
             {
               title: '5-nav中切换箭头与menu的方式',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-3-navSetting/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-3-navSetting/'
             },
             {
               title: '6-mixin的使用',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-4-Mixin/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-4-Mixin/'
             },
             {
               title: '7-loading使用',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-5-Loading/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-5-Loading/'
             },
             {
               title: '8-decorator的使用',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-6-Decorator/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-6-Decorator/'
             },
             {
               title: '9-支付方式',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-8-Payments/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-8-Payments/'
             },
             {
               title: '10-打印功能',
-              path: '/Projects/VenueOnlineManageSystem/6-CoreDifficultResolve/6-9-Print/'
+              path: '/Frames/VenueOnlineManageSystem/6-CoreDifficultResolve/6-9-Print/'
             },
           ]
         },
