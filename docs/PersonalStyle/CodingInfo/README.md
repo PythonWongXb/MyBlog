@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-02-27 10:02:14
+ * @LastEditTime: 2021-03-07 21:50:45
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /MyBlog/docs/PersonalStyle/CodingInfo/README.md
+-->
 ---
 sidebar: auto
 ---
@@ -66,3 +74,14 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 反馈
 用隐喻来组织系统
 可以忍受的速度
+
+## 前端自动化测试
+
+1. E2E (End to End) 属于黑盒测试
+2. unit test 组件、function、TDD
+
+### 工具
++ Karma + Mocha
+
+## 前端埋点
+hooks方式
