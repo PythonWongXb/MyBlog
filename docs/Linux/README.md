@@ -1,7 +1,6 @@
 ---
 sidebar: auto
 ---
-
 # Linux
 
 ## 简介
