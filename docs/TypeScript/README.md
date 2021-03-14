@@ -7,9 +7,10 @@ sidebar: auto
 2. 类和接口之间是实现的关系 => implements
 3. 抽象类 => Abstruct Clas
 4. 重载 => callable overloads
-5. 泛形
+5. 泛形 => Generic Type Variables
   + 泛形类
   + 泛形约束
+    + format => T extends Lengthwise
   + 泛形接口
   + 函数泛形
   + 多个泛形参数的函数
