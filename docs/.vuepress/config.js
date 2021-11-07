@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-03-07 20:35:55
+ * @LastEditTime: 2021-11-07 20:53:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -230,11 +230,11 @@ module.exports = {
           children: [
             {
               title: '1',
-              path: '/Golang/one'
+              path: '/Golang/one/'
             },
             {
               title: '2',
-              path: '/Golang/two'
+              path: '/Golang/two/'
             },
           ],
         },
