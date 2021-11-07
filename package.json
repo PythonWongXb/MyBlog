@@ -17,6 +17,7 @@
     "vuepress": "^1.8.0"
   },
   "dependencies": {
+    "dayjs": "^1.10.6",
     "vue-class-component": "^7.2.6"
   }
 }
