@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2022-05-15 17:07:23
+ * @LastEditTime: 2022-05-15 18:33:20
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -23,7 +23,7 @@
 
 <template lang="pug">
 .app_container_some
-  .titl.font 咕噜咕噜
+  //- .titl.font 咕噜咕噜
   //- .titl.font(style="margin-bottom: 10px;") 宝贝我永远爱你哦～
   .second
     span.title 秒：
@@ -73,7 +73,7 @@ class OtherComponent extends Vue {
   day = "";
   months = "";
   year = "";
-  imgSrc = require('./../public/love.jpeg')
+  imgSrc = require('./../public/gulu.jpeg')
 
   timeStamp(second_time) {
     var time = parseInt(second_time) + "秒";
@@ -105,7 +105,7 @@ class OtherComponent extends Vue {
   }
 
   countTime() {
-    const beginLoveTime = dayjs("2021-08-29 21:41:00");
+    const beginLoveTime = dayjs("2022-05-14 17:38:00");
     const date2 = dayjs();
     this.second = date2.diff(beginLoveTime, "second");
     this.minutes = date2.diff(beginLoveTime, "minutes");
