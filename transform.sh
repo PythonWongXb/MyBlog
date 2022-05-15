@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "transform"
-cp -r docs/.vuepress/dist dist
+cp -r docs/.vuepress/dist /
