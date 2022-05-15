@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2021-11-07 20:53:45
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-05-15 17:21:52
+ * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
  */
