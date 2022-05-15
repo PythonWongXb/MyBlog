@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "serve": "vuepress dev docs",
     "build": "bash build.sh",
-    "transform": "bash transform.sh"
+    "transform": "sudo bash transform.sh"
   },
   "author": "",
   "license": "ISC",

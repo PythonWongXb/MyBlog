@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-27 22:17:44
- * @LastEditTime: 2022-05-15 17:21:52
+ * @LastEditTime: 2022-05-15 17:58:21
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/config.js
@@ -17,7 +17,7 @@
 module.exports = {
   title: '二十多岁的老王的个人网站',
   description: 'Just playing around',
-  base: '/blog/',
+  base: '/MyBlog/',
   themeConfig: {
     lastUpdated: '最后更新', // string | boolean
     nav: [
