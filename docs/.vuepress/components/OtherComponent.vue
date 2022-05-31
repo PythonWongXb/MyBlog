@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2021-11-07 20:37:26
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-05-31 12:58:13
+ * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
 -->
@@ -45,6 +45,13 @@
     span.content {{ sum }}
   .img
     img(:src="imgSrc")
+    el-image(
+        v-for="item in srcList"
+        :key="item"
+        style="width: 100px; height: 100px; padding: 5px;"
+        :src="item"
+        :preview-src-list="srcList"
+    )
 </template>
 
 <script>
@@ -68,6 +75,12 @@ import dayjs from "dayjs";
   },
 })
 class OtherComponent extends Vue {
+    srcList = [
+        require('./../public/us_1.jpeg'),
+        require('./../public/us_2.jpeg'),
+        require('./../public/us_3.jpeg'),
+        require('./../public/us_4.jpeg'),
+    ]
   second = "";
   minutes = "";
   day = "";
