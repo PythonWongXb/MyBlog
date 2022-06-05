@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2022-05-31 12:58:13
+ * @LastEditTime: 2022-06-05 12:25:12
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -25,6 +25,9 @@
 .app_container_some
   .titl.font 与茜茜宝贝的纪念日
   .titl.font(style="margin-bottom: 10px;") 宝贝我永远爱你哦～
+  .second
+    span.title 日期：
+    span.content {{ date }}
   .second
     span.title 秒：
     span.content {{ second }}
@@ -87,6 +90,7 @@ class OtherComponent extends Vue {
   months = "";
   year = "";
   imgSrc = require('./../public/love.jpeg')
+  date = '2021-08-29 21:41:00'
 
   timeStamp(second_time) {
     var time = parseInt(second_time) + "秒";
