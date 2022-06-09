@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2022-06-05 12:25:43
+ * @LastEditTime: 2022-06-09 13:55:37
  * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
@@ -78,18 +78,15 @@ import dayjs from 'dayjs'
 })
 class OtherComponent extends Vue {
     srcList = [
-        require('./../public/c_1.jpeg'),
-        require('./../public/c_2.jpeg'),
-        require('./../public/c_3.jpeg'),
-        require('./../public/c_4.jpeg'),
-        require('./../public/c_5.jpeg'),
+        require('./../public/dd/1.jpeg'),
+        require('./../public/dd/2.jpeg'),
     ]
   second = ''
   minutes = ''
   day = ''
   months = ''
   year = ''
-  imgSrc = require('./../public/gulu.jpeg')
+  imgSrc = require('./../public/dd/1.jpeg')
   date = '2022-03-27 00:00:00'
 
 
