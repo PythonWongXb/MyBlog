@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-24 20:09:22
- * @LastEditTime: 2022-06-05 12:25:12
- * @LastEditors: Evan Zuo v_wangxiangbo01@baidu.com
+ * @LastEditTime: 2023-02-26 17:20:47
+ * @LastEditors: wangxiangbo01 wangxiangbo01@baidu.com
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-starter/docs/.vuepress/components/home.vue
 -->
@@ -51,7 +51,7 @@
     el-image(
         v-for="item in srcList"
         :key="item"
-        style="width: 100px; height: 100px; padding: 5px;"
+        style="width: 100px; height: 100px; padding: 5px; width: fit-content;"
         :src="item"
         :preview-src-list="srcList"
     )
@@ -78,12 +78,8 @@ import dayjs from "dayjs";
   },
 })
 class OtherComponent extends Vue {
-    srcList = [
-        require('./../public/us_1.jpeg'),
-        require('./../public/us_2.jpeg'),
-        require('./../public/us_3.jpeg'),
-        require('./../public/us_4.jpeg'),
-    ]
+srcList = Array(25).fill(1).map((item, index) => require(`./../public/us_${index + 1}.jpeg`))
+
   second = "";
   minutes = "";
   day = "";
